@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--meta tag for websearch filter-->
+  <meta charset="UTF-8">
+  <meta name="description" content="Mobile phones, Online Mobile Store">
+  <meta name="keywords" content="Moible, Iphone, Samsung, HUwaei, Xiaomi, Oneplus">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--title for the tab of website-->
+	<title>Mobile Store | Products</title>
+
+	<!--linking external css-->
+	<link rel="stylesheet" type="text/css" href="..\CSS\Stylesheet.css">
+
+	<!--internal css tag-->
+	<style type="text/css">
+		
+		/*style for main body div*/
+		.main_div{
+			background: ;
+			width: 98%; 
+			height: 800px; 
+			float: left; 
+			margin: 30px 50px 0px 20px;
+		}
+
+		/*style for different products section*/
+		.product_div{
+			background: lightgrey;
+			width: 30%; 
+			height: 350px; 
+			float: left; 
+			margin: 10px;
+			border: 2px solid black;
+		}
+
+		/*style for listed products image*/
+		.product_image{
+			width: 99.4%; 
+			height: 80%; 
+			float: left;
+		}
+
+		/*style for product description div*/
+		.product_description{
+			background: white; 
+			width: 69.4%; 
+			height: 19.2%; 
+			float: left;
+			border-right: 2px solid black;
+			border-top: 2px solid black;
+		}
+
+		/*style for the buy button div*/
+		.buy_button{
+			background: white; 
+			width: 30%; 
+			height: 19.2%; 
+			float: left;
+			border-top: 2px solid black;
+		}
+
+		/*style for the button features*/
+		.button{
+			border-radius: 5px;
+			font-family: sans-serif;
+			font-size: 16px;
+			font-weight: 700;
+			text-align: center;
+			color: black;
+			margin: 20px 10px 10px 40px;
+		}
+
+		/*style for description texts*/
+		.description_text{
+			font-size: 15px;
+			color: black;
+			font-weight: bold;
+			font-family: sans-serif;
+			text-align: center;
+			margin-left: 80px;
+		}
+	</style>
+
+
+</head>
+<body class="bg_image">
+
+	<!--creating wrapper-->
+	<div class="wrapper">
+
+		<header>
+
+			<!--div for company icon-->
+			<div class="icon">
+				<a href="..\Index.html">	<img src="..\images\icon.png" height="100%" width="100%" alt="Icon image"> </a>
+				
+			</div>
+
+			<!--div for navigation and search-->
+			<div class="header_elements">
+				
+				<!--navigation bar-->
+				<nav class ="navigation">
+
+					<!--list of navigation bar menu-->
+					<ul> 
+						<li class="list_style"><a href="..\Index.html" class="list_anchor">Home</a> </li>
+						<li class="list_style"><a href="Products.html" class="list_anchor"> Products</a> </li>
+						<li class="list_style"><a href="Blog.html" class="list_anchor">Blog</a> </li>
+						<li class="list_style"><a href="Research.html" class="list_anchor"> Research</a> </li>   
+						<li class="list_style"><a href="Contact_us.html" class="list_anchor"> Contact-Us</a> </li>
+					</ul>
+
+				</nav>
+				<!--div for date-->
+				<div style=" width: 20%; height: 35px; float: right; margin: 8px 0px 0px 10px; font-family: 'Arial';" id="date-div">
+
+				</div>
+
+				<!--javascript tag for date display function-->
+				<script type="text/javascript">
+					const dateDiv = document.getElementById("date-div");
+
+					//display date using this function
+					function myDateFunction() {
+					    const now = new Date();
+					    const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+					    const nowStr = now.toLocaleString("en-US", options);
+					    dateDiv.innerHTML = nowStr;
+					}
+
+					myDateFunction();
+				</script>
+
+				<!--div for search box-->
+				<div class="searchbox">
+
+					<!--for for search box-->
+					<form> 
+ 						 <input type="text" name="text" class="search" placeholder="Search for prodcuts">
+ 						 <input type="submit" name="submit" class="submit" value="Search">
+					</form>
+				</div>
+					
+			</div>
+
+		</header>
+
+		<!--div for heading (Blog)-->
+		<div style="width: 100%; height: 90px; float: right; margin: 10px 10px 0px 10px; color: darkblue; border: 3px solid black; background: white;">
+			<h1 style="text-align: center;"> Mobilephone categories</h1>
+		</div>
+
+		<!--div for products--> 
+		<div class="main_div">
+
+			<!--div for product listing-->
+			<div class="product_div">
+
+				<!--div for product image-->
+				<div class="product_image">
+					<img src="..\images\Iphone.png" width="100%" height="100%">
+				</div>
+
+				<!--div for product description-->
+				<div class="product_description">
+					<p class="description_text">Iphone 13 pro max<br> Price:</p>
+				</div>
+
+				<!--div for buy button-->
+				<div class="buy_button">
+					<button class="button">
+						BUY
+					</button>
+				</div>
+				
+			</div>
+
+			<!--div for product listing-->
+			<div class="product_div">
+
+				<!--div for product image-->
+				<div class="product_image">
+					<img src="..\images\Samsung.jpeg" width="100%" height="100%">
+				</div>
+
+				<!--div for product description-->
+				<div class="product_description">
+					<p class="description_text">Samsung Galaxy S9 Plus<br> Price:</p>
+				</div>
+
+				<!--div for buy button-->
+				<div class="buy_button">
+					<button class="button">
+						BUY
+					</button>
+				</div>
+				
+			</div>
+
+			<!--div for product listing-->
+			<div class="product_div">
+
+				<!--div for product image-->
+				<div class="product_image">
+					<img src="..\images\Pixel.png" width="100%" height="100%">
+				</div>
+
+				<!--div for product description-->
+				<div class="product_description">
+					<p class="description_text">Google Pixel 3a XL<br> Price:</p>
+				</div>
+
+				<!--div for buy button-->
+				<div class="buy_button">
+					<button class="button">
+						BUY
+					</button>
+				</div>
+				
+			</div>
+
+			<!--div for product listing-->
+			<div class="product_div">
+
+				<!--div for product image-->
+				<div class="product_image">
+					<img src="..\images\Huwaei.png" width="100%" height="100%">
+				</div>
+
+				<!--div for product description-->
+				<div class="product_description">
+					<p class="description_text">Huwaei P40 lite<br> Price:</p>
+				</div>
+
+				<!--div for buy button-->
+				<div class="buy_button">
+					<button class="button">
+						BUY
+					</button>
+				</div>
+				
+			</div>
+
+			<!--div for product listing-->
+			<div class="product_div">
+
+				<!--div for product image-->
+				<div class="product_image">
+					<img src="..\images\Oneplus.png" width="100%" height="100%">
+				</div>
+
+				<!--div for product description-->
+				<div class="product_description">
+					<p class="description_text">Oneplus 8T<br> Price:</p>
+				</div>
+
+				<!--div for buy button-->
+				<div class="buy_button">
+					<button class="button">
+						BUY
+					</button>
+				</div>
+				
+			</div>
+
+			<!--div for product listing-->
+			<div class="product_div">
+
+				<!--div for product image-->
+				<div class="product_image">
+					<img src="..\images\Xiaomi.png" width="100%" height="100%">
+				</div>
+
+				<!--div for product description-->
+				<div class="product_description">
+					<p class="description_text">Xiaomi Redmi Note 7<br> Price:</p>
+				</div>
+
+				<!--div for buy button-->
+				<div class="buy_button">
+					<button class="button">
+						BUY
+					</button>
+				</div>
+				
+			</div>
+
+
+		<footer>
+			<!--div for footer-->
+			<div class="footer_main" style="margin-top: 75px ; margin-left: 0px">
+
+				<!--div containing footer icon and information-->
+				<div style="background: antiquewhite; width: 100%; height: 70px">
+
+					<!--div containing 3 divs for icon, info, and link bar-->
+					<div class="footer_topright">
+
+						<!--div for icon in footer-->
+						<div style="width:10%; height:70px; float:left;">
+							<img src="..\images\icon.png" height="100%" width="100%" alt="Icon image">
+						</div>
+
+						<!--div for footer extra info-->
+						<div class="footer_extrainfo_right">
+						Phone:+977-9892189362<br>
+						Email:mobileshop@gmail.com<br>		
+						
+						</div>
+
+						<!--div for page links in footer-->
+						<div class="footer_link_div">
+
+							<!--list of other pages-->
+							<ul>
+								<li style="font-family: Arial; margin-left:1opx; display: inline; text-decoration: none;font-weight: bold;"> Information:</li>
+								<li class="footer_infosec"><a href="Research.html" class="footer_infosec_anchor">Research</a></li>
+								<li class="footer_infosec"><a href="Contact_us.html" class="footer_infosec_anchor">Contact-Us</a></li>
+							</ul>
+							
+						</div>
+
+					</div>
+
+					<!--div for social media connection-->
+					<div class="footer_socialmedia">
+
+						<!--top half of social media div-->
+						<div style="background:lightblue; width: 100%; height: 35px; float:">
+							<span style="padding-left: 130px; font-size: 20px; font-weight: bold;">Connect with us:</span>
+						</div>
+
+						<!--bottom half of social media div-->
+						<div style="background:dimgrey; width: 100%; height: 35px;" >
+							 
+							<!--empty div-->
+							<div class="footer_socialmedia_div">	
+							</div>
+
+							<!--three div inside a div for three social 
+							media link of facebook, instagram, and twitter-->
+							<div class="footer_socialmedia_div">
+
+								<!--facebook link-->
+								<div class="footer_socialmedia_link">
+									<a href="https://www.facebook.com/rnepacs"><img src="..\images\icon_fb.png" width="100%" height="100%"></a>
+								</div>
+
+								<!--instagram link-->
+								<div class="footer_socialmedia_link">
+									<a href="https://www.instagram.com/rnepacs/"><img src="..\images\icon_ig.png" width="100%" height="100%"></a>
+								</div>
+
+								<!--twitter link-->
+								<div class="footer_socialmedia_link">
+									<a href="https://twitter.com/rnepacs/"><img src="..\images\icon_twitter.png" width="100%" height="100%"> </a>
+								</div>
+
+							</div>
+
+							<!--empty div-->
+							<div class="footer_socialmedia_div">
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!--bottom half div of footer-->
+				<div style="width: 100%; height: 60px">
+
+					<!--div for copyright content-->
+					<div class="footer_div_bottom" style="float: left;">	
+				 		<p style="padding-bottom: 10px; padding-left: 10px; padding-top:10px; font-family: Arial; font-weight: bold;">&copy; Copyright | Prince Adhikari </p>
+				 	</div>
+
+				 	<!--div for location section-->
+				 	<div class="footer_div_bottom" style="float: right;">
+				 		<p style="padding-bottom: 10px; padding-left: 400px; padding-top:0px; font-family: Arial; text-align: left;"><span style=" font-weight: bold;">Our Location:</span><br>Kamal Marg, Kamal Pokhari,<br>Kathmandu, Nepal</p>
+				 	</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+	
+
+</body>
+</html>

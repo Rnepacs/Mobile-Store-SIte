@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--meta tag for websearch filter-->
+  <meta charset="UTF-8">
+  <meta name="description" content="Mobile phones, Online Mobile Store">
+  <meta name="keywords" content="Moible, Iphone, Samsung, HUwaei, Xiaomi, Oneplus">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--title for the tab of website-->
+	<title>Mobile Store</title>
+
+	<!--linking external css-->
+	<link rel="stylesheet" type="text/css" href="CSS\Stylesheet.css">
+
+	<!--internal css tag-->
+	<style type="text/css">
+
+		/*adding width, height, margin, and features to the slider*/
+	    .slider 
+	     	{
+	     	width: 90%;
+	     	height: 500px;
+	     	margin: 20px auto;
+	     	box-sizing: border-box;
+	     	overflow: hidden;
+	     	box-shadow: 5px 5px 10px grey;
+	      	}
+
+	  /*style for image of the slider*/
+	    img
+	      {
+	      width: 100%;
+	      height: 100%;
+	      }
+
+
+	</style>
+
+
+</head>
+<body class="bg_image">
+
+	<!--creating wrapper-->
+	<div class="wrapper" style="height: 1600px; background-color: lightblue; border:1px solid black;">
+
+		<header>
+
+			<!--div for company icon-->
+			<div class="icon">
+				<a href="..\Index.html">	<img src="images\icon.png" height="100%" width="100%" alt="Icon image"> </a>
+				
+			</div>
+
+			<!--div for navigation and search-->
+			<div class="header_elements">
+				
+				<!--navigation bar-->
+				<nav class ="navigation">
+
+					<!--list of navigation bar menu-->
+					<ul> 
+						<li class="list_style"><a href="Index.html" class="list_anchor">Home</a> </li>
+						<li class="list_style"><a href="HTML\Products.html" class="list_anchor"> Products</a> </li>
+						<li class="list_style"><a href="HTML\Blog.html" class="list_anchor">Blog</a> </li>
+						<li class="list_style"><a href="HTML\Research.html" class="list_anchor"> Research</a> </li>   
+						<li class="list_style"><a href="HTML\Contact_us.html" class="list_anchor"> Contact-Us</a> </li>
+					</ul>
+
+				</nav>
+				<!--div for date-->
+				<div style=" width: 20%; height: 35px; float: right; margin: 8px 0px 0px 10px; font-family: 'Arial';" id="date-div">
+
+				</div>
+
+				<!--javascript tag for date display function-->
+				<script type="text/javascript">
+					const dateDiv = document.getElementById("date-div");
+
+					//display date using this function
+					function myDateFunction() {
+					    const now = new Date();
+					    const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+					    const nowStr = now.toLocaleString("en-US", options);
+					    dateDiv.innerHTML = nowStr;
+					}
+
+					myDateFunction();
+				</script>
+
+				<!--div for search box-->
+				<div class="searchbox">
+
+					<!--for for search box-->
+					<form> 
+ 						 <input type="text" name="text" class="search" placeholder="Search for prodcuts">
+ 						 <input type="submit" name="submit" class="submit" value="Search">
+					</form>
+				</div>
+					
+			</div>
+
+		</header>
+
+		<!--div for slider--> 
+		<div class="slider" style="background: ghostwhite;width: 98%; height: 600px; float: left; margin: 20px 65px 0px 20px">
+			<div id="img">
+				<img src="Images/three.png" >
+			</div>	
+		</div>
+
+		<!--javascript for the slider-->
+		<script>
+			var images = ['Images/one.jpg', 'Images/two.jpg', 'Images/three.png', 'Images/four.jpg'];
+
+            var x = 0;
+            var imgs = document.getElementById('img');
+            setInterval(slider, 4000);
+
+            //js for slider
+            function slider() {
+
+            	//if-else statement for the slider image to change
+              if (x < images.length) 
+                {
+                x = x + 1;
+                } 
+
+              else 
+                {
+                x = 1;
+                }
+
+
+              imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+            }
+
+		</script>
+
+
+		<!--div for text spave-->
+		<div style="width: 100%; height:200px; float: left;">
+			<div style=" width: 70%; height: 100px; float: left; margin:70px 50px; margin-left:240px">
+				<p><h1 style="color: darkblue; font-family:century gothic; font-style: italic;"> We provide varities of mobile products and accessories</h1></p>
+			</div>
+			
+		</div>
+
+		<!--div for homepage text-->
+		<div style=" width: 40%; height: 380px; float: left; margin:0px 50px">
+			<h1 style="color:darkcyan;font-family:century gothic;">LOOK INTO OUR PRODUCTS</h1>
+			<h2 style="color:darkolivegreen;font-family:century gothic;">GET THE TASTE OF LATEST TECHNOLOGIES</h2>
+			<h3 style="color:blue;font-family:century gothic;"> GET YOUR HANDS ON THE LATEST PRODUCTS FROM OUR STORE</h3>
+			<h3 style="font-family:century gothic;"> CLICK THE PRODUCTS TO EXPLORE NOW >></h3>
+		</div>
+
+
+
+		<!--div for products page breif-->
+		<div style="background:dimgrey; width: 50%; height: 400px; float: left; border:2px solid black">
+
+			<!--four div for brief product page contents and link-->
+			<div style="background:greenyellow; width: 49.5%; height: 200px; float: left;  border-right: 2px solid black;">
+				<a href="HTML\Products.html"> <img src="images\Iphone.png" width="100%" height="100%"> </a>
+			</div>
+
+			<div style="background:lightcoral; width: 50%; height: 198px; float: right; border-bottom: 2px solid black; ">
+				<a href="HTML\Products.html"> <img src="images\Samsung.jpeg" width="100%" height="100%"> </a>
+				
+			</div>
+
+			<div style="background:lightgoldenrodyellow; width: 50%; height: 198px; float: left; border-top: 2px solid black;">
+				<a href="HTML\Products.html"> <img src="images\Oneplus.png" width="100%" height="100%"></a>
+			</div>
+
+			<div style="background:lightseagreen; width: 49.5%; height: 200px; float: right;border-left: 2px solid black;">
+				<a href="HTML\Products.html"> <img src="images\HUwaei.png" width="100%" height="100%"> </a>
+			</div>
+		</div>
+
+				<!--empty div for space-->
+		<div style="width: 50%; height:100px; float: left;">
+			
+			
+		</div>
+
+		<!-- empty div for space-->
+		<div style="width: 100%; height:100px; float: left;">
+
+			<h2 style="text-align:center; font-family:century gothic; color: darkblue;">We have been produly serving for over 10 years all over Nepal.</h2>
+			<h2 style="text-align:center; font-family:century gothic; color: darkblue;">We provide every latest products ever released.</h2>
+			
+		</div>
+
+		<footer>
+			<!--div for footer-->
+			<div class="footer_main" style="margin-top:80px">
+
+				<!--div containing footer icon and information-->
+				<div style="background: antiquewhite; width: 100%; height: 70px">
+
+					<!--div containing 3 divs for icon, info, and link bar-->
+					<div class="footer_topright">
+
+						<!--div for icon in footer-->
+						<div style="width:10%; height:70px; float:left;">
+							<img src="images\icon.png" height="100%" width="100%" alt="Icon image">
+						</div>
+
+						<!--div for footer extra info-->
+						<div class="footer_extrainfo_right">
+						Phone:+977-9892189362<br>
+						Email:mobileshop@gmail.com<br>		
+						
+						</div>
+
+						<!--div for page links in footer-->
+						<div class="footer_link_div">
+
+							<!--list of other pages-->
+							<ul>
+								<li style="font-family: Arial; margin-left:1opx; display: inline; text-decoration: none;font-weight: bold;"> Information:</li>
+								<li class="footer_infosec"><a href="HTML\Research.html" class="footer_infosec_anchor">Research</a></li>
+								<li class="footer_infosec"><a href="HTML\Contact_us.html" class="footer_infosec_anchor">Contact-Us</a></li>
+							</ul>
+							
+						</div>
+
+					</div>
+
+					<!--div for social media connection-->
+					<div class="footer_socialmedia">
+
+						<!--top half of social media div-->
+						<div style="background:lightblue; width: 100%; height: 35px; float:">
+							<span style="padding-left: 130px; font-size: 20px; font-weight: bold;">Connect with us:</span>
+						</div>
+
+						<!--bottom half of social media div-->
+						<div style="background:dimgrey; width: 100%; height: 35px;" >
+							 
+							<!--empty div-->
+							<div class="footer_socialmedia_div">	
+							</div>
+
+							<!--three div inside a div for three social 
+							media link of facebook, instagram, and twitter-->
+							<div class="footer_socialmedia_div">
+
+								<!--facebook link-->
+								<div class="footer_socialmedia_link">
+									<a href="https://www.facebook.com/rnepacs"><img src="images\icon_fb.png" width="100%" height="100%"></a>
+								</div>
+
+								<!--instagram link-->
+								<div class="footer_socialmedia_link">
+									<a href="https://www.instagram.com/rnepacs/"><img src="images\icon_ig.png" width="100%" height="100%"></a>
+								</div>
+
+								<!--twitter link-->
+								<div class="footer_socialmedia_link">
+									<a href="https://twitter.com/rnepacs/"><img src="images\icon_twitter.png" width="100%" height="100%"> </a>
+								</div>
+
+							</div>
+
+							<!--empty div-->
+							<div class="footer_socialmedia_div">
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!--bottom half div of footer-->
+				<div style="width: 100%; height: 60px">
+
+					<!--div for copyright content-->
+					<div class="footer_div_bottom" style="float: left;">	
+				 		<p style="padding-bottom: 10px; padding-left: 10px; padding-top:10px; font-family: Arial; font-weight: bold;">&copy; Copyright | Prince Adhikari </p>
+				 	</div>
+
+				 	<!--div for location section-->
+				 	<div class="footer_div_bottom" style="float: right;">
+				 		<p style="padding-bottom: 10px; padding-left: 400px; padding-top:0px; font-family: Arial; text-align: left;"><span style=" font-weight: bold;">Our Location:</span><br>Kamal Marg, Kamal Pokhari,<br>Kathmandu, Nepal</p>
+				 	</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+			
+		
+		
+	</div>
+
+	
+
+</body>
+</html>
+

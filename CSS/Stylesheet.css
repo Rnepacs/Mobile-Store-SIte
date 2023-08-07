@@ -1,0 +1,185 @@
+/*style for background image that appears on every page*/
+.bg_image{
+	background-image: url("../Images/background.png");
+	height: 100%;
+	width: 100%;
+}
+
+
+
+/*style for wrapper div fo every page*/
+.wrapper{
+	width: 90%; 
+	height: 1200px; 
+	margin: auto;
+}
+
+/*style for icon of website*/
+.icon{
+	background: lightblue;
+	 width: 8%; 
+	 height: 90px; 
+	 float: left; 
+	 margin-top: 10px; 
+	 margin-left:10px ;
+	 border: 1px solid black;
+}
+
+/*style for header content of website*/
+.header_elements{
+	background: lightblue;
+	width: 89%;
+	height: 90px;
+	float: right;
+	margin: 10px;
+	border: 1px solid black;
+}
+
+/*style for navigation bar*/
+.navigation{
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	background: lightblue; 
+	width: 70%;
+	height: 50px;
+	float: left;
+	margin: 10px;
+}
+
+/*style for navigation bar hover effect*/
+.navigation ul li a:hover{
+	color: white;
+	background-color: darkblue;
+}
+
+/*style for navigation list*/
+.list_style{
+	display: inline;
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+/*style for navigation list link*/
+.list_anchor{
+	text-decoration: none;
+	font-family: 'sans-serif';
+	color: black;
+	border: 2px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*style for search box div in header*/
+.searchbox{
+	width: 20%;
+	height: 30px;
+	float: right;
+	margin: 8px 10px 8px 10px;"
+}
+
+/*style for search section in header*/
+.search {
+  width: 60%;
+}
+
+/*style for search button submit*/
+.submit {
+  width: 60px;
+  background-color: lightgrey
+   ;
+  color: 
+}
+
+/*style for footer div*/
+.footer_main{
+	 width: 100%;
+	 height: 140px;
+	 float: left;
+	 margin-top: 10px;
+	 border: 1px solid black;
+}
+
+/*style for top right div inside main footer div*/
+.footer_topright{
+	background: lightblue;
+	width: 70%; 
+	height: 70px; 
+	float: left;
+}
+
+/*style for extra info div in footer*/
+.footer_extrainfo_right{
+	width:30%; 
+	height:60px; 
+	float: left; 
+	padding-left: 10px; 
+	padding-top: 10px; 
+	font-family: Arial;
+}
+
+/*style for footer navigation div*/
+.footer_link_div{
+	background: lightblue; 
+	width:50%; 
+	height:70px; 
+	float: left;
+}
+
+/*style for footer navigation content*/
+.footer_infosec{
+	display: inline;
+	text-decoration: none;
+	margin-left: 10px;
+
+}
+
+/*style for footer navigation content hover effect*/
+.footer_link_div ul li a:hover{
+	color: white;
+	background-color: darkblue;
+}
+
+
+/*style for footer navigation link*/
+.footer_infosec_anchor{
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 15px;
+	color: black;
+	border: 3px solid black;
+	background: lightblue ;
+}
+
+/*style for footer main social media div*/
+.footer_socialmedia{
+	background:lightblue; 
+	width: 30%; 
+	height: 70px; 
+	float: right;
+}
+
+/*style for footer sub social media div*/
+.footer_socialmedia_div{
+	background:lightblue; 
+	width: 33.3%; 
+	height: 35px; 
+	float: left;
+}
+
+/*style for footer social media icon link*/
+.footer_socialmedia_link{ 
+	width: 33.3%; 
+	height: 35px; 
+	float: left;
+}
+
+/*style for footer bottom half div*/
+.footer_div_bottom{
+	background: lightblue; 
+	width: 50%; 
+	height: 70px; 
+	
+}
+
+

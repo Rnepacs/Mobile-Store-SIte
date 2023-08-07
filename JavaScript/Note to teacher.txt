@@ -1,0 +1,1 @@
+My external JavaScript wasnot functioning so I implemented it internally.
